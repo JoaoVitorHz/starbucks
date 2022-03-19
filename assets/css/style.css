@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Century Gotic', 'Arial', 'Helvetica';
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu nav ul, 
+li a {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    margin: 20px;
+    color: #000;
+    border-bottom:2px solid #FFF;
+}
+
+.menu nav ul li a:hover {
+    border-bottom:2px solid #017143
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 100px);
+}
+
+.rightside {
+    display: flex;
+    align-items: flex-end;
+}
+.circle {
+    width: 500px;
+    height: 500px;
+    border-top-left-radius: 500px;
+    background-color: #017143;
+}
+.social {
+    position: absolute;
+    right: 5px;
+    top: 240px;
+    display: flex;
+    flex-direction: column;
+}
+.social img {
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+}
+.coffe{
+    position: absolute;
+}
+.coffe img {
+    height: 500px;
+}
+.leftside {
+    display: flex;
+    align-items: center;
+}
+.texto{
+    position: relative;
+    font-size: 60px;
+    left: 100px;
+    padding:0px;
+}
+.texto strong {
+    color: #017143;
+}
+.leftside p {
+    font-size:15px;
+    width: 390px;
+}
+.leftside button {
+    background-color: #017143;
+    border-radius: 100px;
+    border:none;
+    color: #FFF;
+    padding: 9px 14px;
+    font-size: 15px;
+}
+
+.leftside button:hover {
+    cursor: pointer;
+}
+
+.coffes {
+    position: absolute;
+    bottom: 0;
+    left: 600px;
+}
+
+.coffes img {
+    width: 80px;
+    padding: 20px;
+}
