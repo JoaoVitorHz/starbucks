@@ -33,9 +33,6 @@ header{
 }
 
 /* CONTEUDO */
-.section{
-    
-}
 .sectionInt{
     display: flex;
     max-width: 1200px;
@@ -79,7 +76,14 @@ header{
 }
 .right-side .copo img{
     width: 350px;
+    position: absolute;
+    right: 170px;
+
+    bottom: 5%;
+    z-index: 3;
 }
+
+/* Bola Verde do quanto da tela */
 .bolaVerde{
     width: 500px;
     height: 500px;
@@ -88,4 +92,56 @@ header{
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+/* Copos Footer */
+.copos{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+
+    bottom: 0;
+    margin-bottom: 20px;
+}
+.copos img{
+    margin-right: 45px;
+    width: 55px;
+    transition: .3s;
+    cursor: pointer;
+}
+.copos img:hover{
+    transform: translate3d(0, -10px, 0);
+}
+
+/* Redes Sociais */
+.social{
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    margin-bottom: -84.43px;
+    margin-right: 20px;
+}
+
+.facebook img{
+    width: 13px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.instagram img, 
+.twitter img{
+    width: 23px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.facebook,
+.instagram,
+.twitter{
+    transition: .3s;
+}
+
+.facebook:hover,
+.instagram:hover,
+.twitter:hover{
+    transform: translate3d(-5px, 0, 0);
 }
