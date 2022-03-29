@@ -52,13 +52,18 @@ header{
     align-items: center;
 }   
 .text{
+    
 }
 .text .big-text{
     font-size: 60px;
 }
+.text .big-text span{
+    transition: .7s;
 
+}
 .text .button{
     margin-top: 30px;
+    
 }
 .text .button a{ 
     text-decoration: none;
@@ -67,6 +72,7 @@ header{
     padding: 10px;
     /* background-color: #2a7242; */
     border-radius: 30px;
+    transition: .7s;
 }
 .right-side{
     width: 50%;
@@ -79,6 +85,8 @@ header{
 
     bottom: 5%;
     z-index: 3;
+
+    transition: .7s;
 }
 
 /* Bola Verde do quanto da tela */
@@ -90,6 +98,7 @@ header{
     position: absolute;
     right: 0;
     bottom: 0;
+    transition: .7s;
 }
 
 /* Copos Footer */
