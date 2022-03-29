@@ -56,9 +56,7 @@ header{
 .text .big-text{
     font-size: 60px;
 }
-.text .big-text span{
-    color: #2a7242;
-}
+
 .text .button{
     margin-top: 30px;
 }
@@ -67,7 +65,7 @@ header{
     color: #FFF;
     margin-top: 5px;
     padding: 10px;
-    background-color: #2a7242;
+    /* background-color: #2a7242; */
     border-radius: 30px;
 }
 .right-side{
@@ -84,10 +82,10 @@ header{
 }
 
 /* Bola Verde do quanto da tela */
-.bolaVerde{
+#bolaVerde{
     width: 500px;
     height: 500px;
-    background-color: #2a7242;
+    /* background-color: #2a7242; */
     border-top-left-radius: 500px;
     position: absolute;
     right: 0;
@@ -148,13 +146,25 @@ header{
 
 
 .mudancaVerde{
-
+    background-color: #2a7242;
 }
 
 .mudancaPink{
-
+    background-color: #e7a6b5;
 }
 
 .mudancaPurple{
+    background-color: #a0276a;
     
+}
+
+.textVerde{
+    color: #2a7242;
+}
+.textPink{
+    color: #e7a6b5;
+
+}
+.textPurple{
+    color: #a0276a;
 }

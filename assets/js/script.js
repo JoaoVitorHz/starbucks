@@ -1,15 +1,56 @@
-const btnGreenCoffe = document.querySelectorAll("greenCoffe");
-const btnPinkCoffe = document.querySelectorAll("pinkCoffe");
-const btnPurpleCoffe = document.querySelectorAll("purpleCoffe");
 
-btnGreenCoffe.addEventListener("click", function green(){
-    alert("Julia ama Verde")
-});
+function greenCoffe(copo){
+    document.querySelector('#copoBanner').setAttribute('src','assets/images/'+copo);
 
-btnPinkCoffe.addEventListener("click", function pink() {
-    alert("Julia ama Rosa")
-});
+    document.querySelector("#bolaVerde").classList.remove('mudancaPink');
+    document.querySelector("#bolaVerde").classList.remove('mudancaPurple');
+    document.querySelector("#bolaVerde").classList.add('mudancaVerde');
 
-btnPurpleCoffe.addEventListener("click", function purple() {
-    alert("Julia ama Roxo")
-});
+    document.querySelector("#staburcksBTN").classList.remove('mudancaPink');
+    document.querySelector("#staburcksBTN").classList.remove('mudancaPurple');
+    document.querySelector("#staburcksBTN").classList.add('mudancaVerde');
+
+    document.querySelector("#starbucksVerde").classList.remove("textPurple")
+    document.querySelector("#starbucksVerde").classList.remove("textPink")
+    document.querySelector("#starbucksVerde").classList.add("textVerde")
+
+    
+};  
+
+function pinkCoffe(copo){
+    document.querySelector('#copoBanner').setAttribute('src','assets/images/'+copo);
+
+    document.querySelector("#bolaVerde").classList.remove('mudancaVerde');
+    document.querySelector("#bolaVerde").classList.remove('mudancaPurple');
+    document.querySelector("#bolaVerde").classList.add('mudancaPink');
+
+    document.querySelector("#staburcksBTN").classList.remove('mudancaVerde');
+    document.querySelector("#staburcksBTN").classList.remove('mudancaPurple');
+    document.querySelector("#staburcksBTN").classList.add('mudancaPink');
+
+    document.querySelector("#starbucksVerde").classList.remove("textVerde")
+    document.querySelector("#starbucksVerde").classList.remove("textPurple")
+    document.querySelector("#starbucksVerde").classList.add("textPink")
+
+
+};
+
+function purpleCoffe(copo){
+    document.querySelector('#copoBanner').setAttribute('src','assets/images/'+copo);
+
+
+    document.querySelector("#bolaVerde").classList.remove('mudancaVerde');
+    document.querySelector("#bolaVerde").classList.remove('mudancaPink');
+    document.querySelector("#bolaVerde").classList.add('mudancaPurple');
+
+    document.querySelector("#staburcksBTN").classList.remove('mudancaPink');
+    document.querySelector("#staburcksBTN").classList.remove('mudancaVerde');
+    document.querySelector("#staburcksBTN").classList.add('mudancaPurple');
+
+    document.querySelector("#starbucksVerde").classList.remove("textVerde")
+    document.querySelector("#starbucksVerde").classList.remove("textPink")
+    document.querySelector("#starbucksVerde").classList.add("textPurple")
+    
+
+};
+
