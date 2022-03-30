@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Source+Serif+Pro:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+    /* MENU */
+
+header{
+    height: 90px;
+}
+.header{
+    max-width: 1200px;
+    width: 100%;
+    height: 90px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 75px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+/* CONTEUDO */
+.sectionInt{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+
+    height: calc(100vh - 90px);
+
+    z-index: 1;
+}
+.left-side{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.text{
+    
+}
+.text .big-text{
+    font-size: 60px;
+    font-weight: 600;
+}
+.text .big-text span{
+    transition: .7s;
+    font-weight: 900;
+    font-size: 70px;
+}
+.text .button{
+    margin-top: 30px;
+    
+}
+.text .button a{ 
+    text-decoration: none;
+    color: #FFF;
+    margin-top: 5px;
+    padding: 10px;
+    /* background-color: #2a7242; */
+    border-radius: 30px;
+    transition: .7s;
+}
+.right-side{
+    width: 50%;
+    height: 100%;
+}
+.right-side .copo img{
+    width: 350px;
+    position: absolute;
+    right: 170px;
+
+    bottom: 5%;
+    z-index: 3;
+
+    transition: .7s;
+}
+
+/* Bola Verde do quanto da tela */
+#bolaVerde{
+    width: 500px;
+    height: 500px;
+    /* background-color: #2a7242; */
+    border-top-left-radius: 500px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: .7s;
+}
+
+/* Copos Footer */
+.copos{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+
+    bottom: 0;
+    margin-bottom: 20px;
+}
+.copos img{
+    margin-right: 45px;
+    width: 55px;
+    transition: .3s;
+    cursor: pointer;
+}
+.copos img:hover{
+    transform: translate3d(0, -10px, 0);
+}
+
+/* Redes Sociais */
+.social{
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    margin-bottom: -84.43px;
+    margin-right: 20px;
+}
+
+.facebook img{
+    width: 13px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    filter: invert(1);
+}
+.instagram img, 
+.twitter img{
+    width: 23px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    filter: invert(1);
+}
+.facebook,
+.instagram,
+.twitter{
+    transition: .3s;        
+}
+
+.facebook:hover,
+.instagram:hover,
+.twitter:hover{
+    transform: translate3d(-5px, 0, 0);
+}
+
+
+.mudancaVerde{
+    background-color: #2a7242;
+}
+
+.mudancaPink{
+    background-color: #e87591;
+}
+
+.mudancaPurple{
+    background-color: #a0276a;
+    
+}
+
+.textVerde{
+    color: #2a7242;
+}
+.textPink{
+    color: #e87591;
+
+}
+.textPurple{
+    color: #a0276a;
+}
