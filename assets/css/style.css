@@ -46,6 +46,8 @@ header{
 
     z-index: 1;
 }
+
+/* Texto e botão */
 .left-side{
     width: 50%;
     height: 100%;
@@ -54,9 +56,6 @@ header{
     justify-content: center;
     align-items: center;
 }   
-.text{
-    
-}
 .text .big-text{
     font-size: 60px;
     font-weight: 600;
@@ -68,7 +67,7 @@ header{
 }
 .text .button{
     margin-top: 30px;
-    
+    cursor: pointer;
 }
 .text .button a{ 
     text-decoration: none;
@@ -79,6 +78,8 @@ header{
     border-radius: 30px;
     transition: .7s;
 }
+
+/* Copo Hero */
 .right-side{
     width: 50%;
     height: 100%;
@@ -94,7 +95,7 @@ header{
     transition: .7s;
 }
 
-/* Bola Verde do quanto da tela */
+/* Bola Verde no quanto inferior direito da tela */
 #bolaVerde{
     width: 500px;
     height: 500px;
@@ -160,7 +161,7 @@ header{
     transform: translate3d(-5px, 0, 0);
 }
 
-
+/* Responsvaies pela mudança de cor */
 .mudancaVerde{
     background-color: #2a7242;
 }

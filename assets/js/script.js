@@ -1,15 +1,18 @@
-
 function greenCoffe(copo){
+    // Troca de imagem
     document.querySelector('#copoBanner').setAttribute('src','assets/images/'+copo);
 
+    // Troca a cor da bola verde
     document.querySelector("#bolaVerde").classList.remove('mudancaPink');
     document.querySelector("#bolaVerde").classList.remove('mudancaPurple');
     document.querySelector("#bolaVerde").classList.add('mudancaVerde');
 
+    // Troca a cor do botão
     document.querySelector("#staburcksBTN").classList.remove('mudancaPink');
     document.querySelector("#staburcksBTN").classList.remove('mudancaPurple');
     document.querySelector("#staburcksBTN").classList.add('mudancaVerde');
 
+    // Troca a cor do texto "STARBUCKS"
     document.querySelector("#starbucksVerde").classList.remove("textPurple")
     document.querySelector("#starbucksVerde").classList.remove("textPink")
     document.querySelector("#starbucksVerde").classList.add("textVerde")
